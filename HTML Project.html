@@ -1,0 +1,196 @@
+<DOCTYPE! html>
+<head>
+<title>Restaurant Website</title>
+</head>
+<style>
+body
+{
+background-image: url('food.jpg');
+background-repeat: repeat;
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+.regform
+{
+width:500px;
+margin: 40px auto;
+padding: 10px 20px 30px;
+background-color:rgba(0,0,0,.5);
+color:white;
+}
+.regform h2
+{
+text-align: center;
+color:#E29578;
+}
+.regform label
+{
+display : block;
+}
+.input input 
+{
+width:100%;
+font-size:1.5em;
+border: 1px solid #006D77;
+box-shadow:2px;
+border-radius:8px;
+padding:10px 10px;
+box-sizing:border-box;
+margin:5px 0px 15px;
+
+}
+.number input
+{
+width:100%;
+font-size:1.5em;
+border: 1px solid #006D77;
+box-shadow:2px;
+border-radius:8px;
+padding:10px 10px;
+box-sizing:border-box;
+margin:5px 0px 15px;
+}
+
+.date input
+{
+width:100%;
+font-size:1.5em;
+border: 1px solid #006D77;
+box-shadow:2px;
+border-radius:8px;
+padding:10px 10px;
+box-sizing:border-box;
+margin:5px 0px 15px;
+}
+.btn
+{
+text-align:center;
+}
+button
+{
+background-color:lightgrey;
+font-size:20px;
+color:black;
+margin-top:20px;
+padding:15px 20px;
+border-radius:8px;
+}
+
+ul 
+{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  overflow: hidden;
+  background-color:rgba(0,0,0,.5) ;
+}
+li 
+{
+  float: left;
+}
+
+li a 
+{
+  display: block;
+  color:white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover 
+{
+  background-color: tomato;
+}
+
+.menu
+{
+list-style-type:none;
+display:none;
+}
+.dropdown li:nth-child(3):hover .menu
+{
+display:block;
+}
+.burger
+{
+list-style-type:none;
+display:none;
+}
+.menu li:nth-child(2):hover
+{
+display:block;
+}
+.menu li:nth-child(1):hover .menu
+{
+display:block;
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+<ul class="dropdown">
+<li><a href='#home'>HOME</a></li>
+<li><a href='#aboutus'>ABOUT</a></li>
+<li><a href='#menu'>MENU</a>
+<ul class="menu">
+<li><a href="#Burgers">Burgers</a>
+<ul class="burgers">
+<li><a href="#">Chicken Burger</a></li>
+<li><a href="#">Bacon Burger</a></li>
+<li><a href="#">Cheese Burger</a></li>
+<li><a href="#">Vegan Burger</a></li>
+</ul>
+</li>
+<li><a href="#Noodels">Noodles</a></li>
+<li><a href="#Salads">Salads</a></li>
+<li><a href="#Pizzas">Pizzas</a></li>
+<li><a href="#Drinks">Drinks</a></li>
+</ul>
+</li>
+<li><a href='#gallery'>GALLERY</a></li>
+<li><a href='#team'>TEAM</a></li>
+<li><a href='#contact'>CONTACT</a></li>
+</ul>
+</div>
+<body>
+<h1 style="text-align:center; font-family:bookmanoldstyle; color:white;"> Welcome to Late Night Dine Right </h1>
+<h2 style="text-align:center; font-family:Calisto MT; color:white; "> Eat Healthy and Natural Food</h2>
+<p style="text-align:center; font-family: Bradley Hand ITC; color:white; font-size:30px;"><abbr title="Late Night Dine Right">LNDR</abbr> is a restaurant, bar and coffee roastery located on Helsinki.
+We have awesome recipes and the most talented chefs in town. So reserve your table,come and enjoy dine with us.
+</p>
+<div class="regform">
+<h2> Reserve Your Table</h2>
+
+<form action="result.html">
+<div class="input">
+<label for="fname">Firstname:</label><br>
+<input type="text" id="fname" name="fname" required>
+</div>
+<div class="input">
+<label for="lname">Lastname:</label><br>
+<input type="text" id="lname" name="lname" required>
+</div>
+<div class="input">
+<label for="email">Email</label><br>
+<input type="email" id="email" name="email" required>
+</div>
+<div class="number">
+<label for="number"> No of People </label>
+<input type="number" id="number" name="number" min="1" max="10 ">
+</div>
+<div class="date">
+<label for="date">Date & Time </label>
+<input type="datetime-local" id="date" name="date" min="28/10/2022">
+</div>
+<div class="btn">
+<button type="submit">Reserve</button>
+<button type="reset">Reset</button>
+</div>
+</form>
+
+</div>
+</body>
+</html>
